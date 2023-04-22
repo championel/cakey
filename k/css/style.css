@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+
+/* rgb(238 180 224) */
+nav {
+    background-color: rgb(201, 180, 244);
+}
+
+.name {
+    padding: 18px;
+    font-size: 2.1rem;
+    font-family: 'Edu TAS Beginner', cursive;
+
+}
+
+#navbar {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar list styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+    padding: 11px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(240, 237, 246);
+    /* text-decoration: underline; */
+}
+
+.name ul li a:active {
+    color: white;
+}
+
+/* #home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 2px;
+    border: 2px solid pink;
+    justify-content: right;
+    align-items: right;
+
+} */
+
+/* #home{
+   content: "";
+   background: url(../img.jpg) no-repeat center center/cover;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+} */
+
+
+.container {
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    position: relative;
+
+
+}
+
+
+#info {
+    /* Margin: auto; only works when dispaly is block */
+    display: block;
+    margin: auto;
+    /* background-color: rgb(231, 254, 239); */
+    height: 75vh;
+    width: 85vw;
+
+    /* border: 2px solid pink; */
+    align-items: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 25px;
+    /* padding: 32px 285px; */
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#info h2 {
+    font-size: 2em;
+    animation: fade-in 7s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+#info .btn {
+    background-color: rgb(240, 233, 254);
+    padding: 7px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 15px 2px;
+    cursor: pointer;
+    height: 45px;
+    width: 87px;
+    color: rgb(17, 78, 102);
+
+}
+
+#info .btn:hover {
+    /* background-color: rgb(250, 215, 243); */
+}
+
+.service-container {
+    /* border: 2px solid skyblue; */
+    position: absolute;
+    top: 555px;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 2px;
+
+    /* height: 725px; */
+}
+
+.service-container .box {
+
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    /* border: 2px solid white; */
+
+}
+
+.service-container .box :hover {
+    box-shadow: 4px 4px 18px rgb(221, 240, 248);
+
+
+}
+
+.service-container .box img {
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+.service-container1 {
+    /* border: 2px solid skyblue; */
+    position: absolute;
+    top: 1025px;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 2px;
+}
+
+.service-container1 .box {
+
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    /* border: 2px solid white; */
+
+}
+
+.service-container1 .box :hover {
+    box-shadow: 4px 4px 18px rgb(221, 240, 248);
+    /* */
+
+}
+
+.service-container1 .box img {
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+#client-section {
+    background-color: rgb(231, 254, 239);
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(231, 254, 239);
+
+    /* background: url('../heather.jpg') no-repeat center center/cover; */
+    width: 100%;
+    /* height: 75%; */
+    z-index: -1;
+}
+
+#client-section>p {
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+    font-size: 2.7rem;
+    display: block;
+    font-weight: bold;
+    padding: 18px;
+    padding-top: 28px;
+}
+
+#clients {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* border: 2px solid pink; */
+}
+
+.client-item {
+    /* border: 4px solid rgb(240, 231, 231); */
+    background-color: rgb(252, 232, 236);
+    height: 285px;
+    width: 405px;
+    display: block;
+    margin: 45px auto;
+}
+
+.client-item p {
+    margin: 28px;
+    text-align: justify;
+}
+
+#contact {
+    position: relative;
+}
+
+/* #contact::before{ */
+/* content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../pic.jpg') no-repeat center center/cover; */
+/* } */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: pink;
+    color: rgb(17, 78, 102);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    /* height: 125px; */
+}
+
+#contactbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactbox input,
+#contactbox textarea {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1.1rem;
+
+}
+
+
+#contactbox form {
+    width: 45%;
+}
+
+#contactbox label {
+    font-size: 1.4rem;
+    font-family: 'Edu TAS Beginner', cursive;
+
+}
+
+#contact h1 {
+    text-align: center;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 2rem;
+    padding-top: 25px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: pink;
+    color: rgb(17, 78, 102);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .socialmediacon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footercontent {
+    padding-top: 17px;
+    width: 224px;
+}
+
+.footercontent li {
+    list-style: none;
+}
+
+.footercontent .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+/* .footercontent .contact li span:nth-child(1) {
+    color: #fff;
+    font-size: px;
+    margin-right: 8px;
+} */
+
+.footercontent .contact li a {
+    text-decoration: none;
+    color: rgb(242, 247, 249);
+}
+
+.footercontent .contact li a:hover {
+    text-decoration: none;
+    color: rgb(13, 8, 27);
+}
+
+.footercontent .socialmediacon li a {
+    padding: 15px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: rgb(248, 199, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    text-decoration: none;
+    border-radius: 58px;
+}
+
+.footercontent .socialmediacon li a:hover {
+    background: rgb(244, 181, 195);
+
+}
+
+.links {
+
+    padding-right: 15px;
+}
+
+.links li {
+
+    list-style: none;
+}
+
+.links h2 {
+    color: rgb(13, 8, 27);
+    padding: 17px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: rgb(13, 8, 27);
+    padding: 1px;
+    display: inline-block;
+    margin-right: 8px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.containnew {
+    /* border: 2px solid skyblue; */
+    width: 475px;
+    padding: 25px;
+}
+
+/* .containnew .links h2{
+  position: relative;
+  color: #fff;
+  font-weight: 200;
+  margin-bottom: 15px;
+   }
+.containnew .links h2::before{
+ content: "";
+ position: absolute;
+ bottom: -7px;
+ left: 0;
+ width: 50px;
+ height: 2px;
+ background: skyblue;
+} */
+.newsletter input {
+    width: 75%;
+    height: 40px;
+    padding: 4px;
+    border: 2px solid rgb(231, 111, 199);
+
+}
+
+.newsletter p {
+    padding: 7px 1px;
+}
+
+.newsletter h2 {
+    padding-top: 17px;
+}
+
+
+.btn {
+    width: 83px;
+    height: 40px;
+    padding: 4px;
+    background: rgb(231, 111, 199);
+    border: rgb(198, 48, 108);
+    color: white;
+
+}
+
+.btn:hover {
+    background: rgb(225, 108, 190);
+    color: pink;
+}
+
+.j {
+    width: 100%;
+    background: pink;
+    padding: 7px 2px;
+    text-align: center;
+    /* color: ; */
+}
